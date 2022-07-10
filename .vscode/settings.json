@@ -1,0 +1,19 @@
+{
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "/"
+    }
+    // {
+    //     "extensionName": ".min.css",
+    //     "format": "compressed",
+    //     "savePath": "/dist/css"
+    // }
+  ],
+
+  "liveSassCompile.settings.includeItems": ["/_dev/scss/style.scss"],
+
+  "liveSassCompile.settings.generateMap": true,
+  "liveSassCompile.settings.autoprefix": ["defaults"]
+}

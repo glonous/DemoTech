@@ -1,0 +1,64 @@
+/*
+Theme Name: Wordpystart
+Theme URI: http://nothing.com
+Version: 0.1
+Description: Child theme for biciesto demo
+Author: Jose Manuel del Solar
+Author URI: https://github.com/joseacat/wordpycat
+Template: wordpycat-master
+*/
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+body {
+  font-family: "DM Sans", sans-serif;
+}
+
+.uk-h1, .uk-h2, .uk-h3, .uk-h4, .uk-h5, .uk-h6, .uk-heading-2xlarge, .uk-heading-large, .uk-heading-medium, .uk-heading-small, .uk-heading-xlarge, h1, h2, h3, h4, h5, h6 {
+  font-family: "DM Sans", sans-serif;
+}
+
+nav .uk-navbar-left img {
+  height: 45px;
+}
+
+body.home .uk-navbar-container {
+  background: none;
+}
+body.home .uk-navbar-container .uk-navbar {
+  transition: all 0.5s ease-in-out;
+  background-color: rgb(255, 255, 255);
+}
+body.home .uk-navbar-container .uk-logo a {
+  position: relative;
+}
+body.home .uk-navbar-container .uk-logo img {
+  transition: all ease 0.5s;
+}
+body.home .uk-navbar-container .uk-logo .light-logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+body.home .uk-navbar-container .uk-logo .light-logo img {
+  opacity: 0;
+  filter: contrast(0) brightness(1000%) grayscale(1);
+}
+body.home .uk-navbar-container.uk-navbar-transparent {
+  height: 0;
+}
+body.home .uk-navbar-container.uk-navbar-transparent .uk-navbar {
+  background-color: rgba(255, 255, 255, 0);
+}
+body.home .uk-navbar-container.uk-navbar-transparent .uk-logo img {
+  opacity: 0;
+}
+body.home .uk-navbar-container.uk-navbar-transparent .uk-logo .light-logo img {
+  opacity: 1;
+}
+
+#hero_section {
+  background: rgb(83, 33, 183);
+  background: linear-gradient(45deg, rgb(83, 33, 183) 0%, rgb(2, 97, 214) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#5321b7", endColorstr="#0261d6",GradientType=1 );
+}/*# sourceMappingURL=style.css.map */

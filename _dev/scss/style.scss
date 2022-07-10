@@ -1,0 +1,17 @@
+/*
+Theme Name: Wordpystart
+Theme URI: http://nothing.com
+Version: 0.1
+Description: Child theme for biciesto demo
+Author: Jose Manuel del Solar
+Author URI: https://github.com/joseacat/wordpycat
+Template: wordpycat-master
+*/
+
+// Imports
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+// Base definitions for the theme
+@import 'variables';
+
+@import 'components';

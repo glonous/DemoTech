@@ -1,0 +1,131 @@
+/*
+Theme Name: WordPycat
+Author: Jose A. Catalan
+Author URI: http://joseacat.io/
+Description: Plantilla en blanco para WordPress
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: wordpycat
+*/
+
+
+:root{
+	/* Colores */
+	--primario: #005B82;
+	--secundario: #00B9E4;
+    	--terciario: #FAC5FF;
+	--blanco: #FFFFFF;
+
+	/* Medidas */
+	--acotado: 990px;
+}
+/* Reset */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+    	-webkit-font-smoothing: antialiased;
+    	-moz-osx-font-smoothing: grayscale;
+}
+ul:not([class]),
+ol:not([class]) {
+	padding: 0;
+    	list-style: none;
+}
+ol:not([class]){
+    	counter-reset: section;
+}
+ol:not([class]) > li:before{
+    	counter-increment: section;
+    	content: counters(section, ".") ". ";
+    	color: var(--rojo);
+    	margin-right: 8px;
+}
+ul:not([class]) li,
+ol:not([class]) li{
+	margin: 0 0 20px;
+}
+ul:not([class])  ul:not([class]){
+	margin-top: 20px;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+	margin: 0;
+}
+body {
+	min-height: 100vh;
+	scroll-behavior: smooth;
+	text-rendering: optimizeSpeed;
+}
+body.is-open{
+    	overflow-y: hidden;
+    	min-height: 100%;
+}
+a:not([class]) {
+	text-decoration-skip-ink: auto;
+    	text-decoration: none;
+}
+img {
+	max-width: 100%;
+	display: block;
+    	height: auto;
+}
+article > * + * {
+	margin-top: 1em;
+}
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+input,
+textarea,
+select{
+    	border: 0;
+    	background-color: var(--color-blanco);
+    	color: var(--color-texto);
+    	padding: 11px;
+}
+button:not(.plus):not(.minus){
+    	border-radius: 44px;
+    	padding: 10px 24px 10px 45px;
+    	border: 0;
+}
+/* Fin Reset */
+
+
+/* General */
+html{
+	background: var(--blanco);
+}
+.alignright {
+    	float:right;
+}
+.alignleft {
+    	float: left;
+}
+a img.alignright {
+    	float: right;
+}
+a img.alignleft {
+    	float: left;
+}
+a img.aligncenter {
+    	display: block;
+    	margin-left: auto;
+    	margin-right: auto;
+}

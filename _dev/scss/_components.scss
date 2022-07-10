@@ -1,0 +1,74 @@
+//------------//
+//   navbar   //
+//------------//
+
+nav {
+  .uk-navbar-left {
+    img {
+      height: 45px;
+    }
+  }
+}
+
+
+//--------------//
+//   Homepage   //
+//--------------//
+
+body.home {
+  .uk-navbar-container {
+    background: none;
+
+    .uk-navbar {
+      transition: all 0.5s ease-in-out;
+      background-color: rgba(255, 255, 255, 1);
+    }
+    
+    .uk-logo {
+      a {
+        position: relative;
+      }
+      img {
+        transition: all ease 0.5s;
+      }
+      .light-logo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        img {
+          opacity: 0;
+          filter: contrast(0) brightness(1000%) grayscale(1);
+        }
+      }
+    }
+
+    &.uk-navbar-transparent {
+      height: 0;
+
+      .uk-navbar {
+        background-color: rgba(255, 255, 255, 0);
+      }
+
+      .uk-logo {
+        img {
+          opacity: 0;
+        }
+        .light-logo img{
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+// Hero section
+
+#hero_section {
+  background: rgb(83,33,183);
+  background: -moz-linear-gradient(45deg,  rgba(83,33,183,1) 0%, rgba(2,97,214,1) 100%);
+  background: -webkit-linear-gradient(45deg,  rgba(83,33,183,1) 0%,rgba(2,97,214,1) 100%);
+  background: linear-gradient(45deg,  rgba(83,33,183,1) 0%,rgba(2,97,214,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5321b7', endColorstr='#0261d6',GradientType=1 );
+}
