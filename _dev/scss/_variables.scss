@@ -1,3 +1,13 @@
+
+// Imports
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+@font-face {
+  font-family: "minecraft";
+  src: url("fonts/minecraft.ttf")
+}
+
+// Body and base
 body {
   font-family: 'DM Sans', sans-serif;
 }
@@ -5,3 +15,9 @@ body {
 .uk-h1, .uk-h2, .uk-h3, .uk-h4, .uk-h5, .uk-h6, .uk-heading-2xlarge, .uk-heading-large, .uk-heading-medium, .uk-heading-small, .uk-heading-xlarge, h1, h2, h3, h4, h5, h6 {
   font-family: 'DM Sans', sans-serif;
 }
+
+/*-----colors-------*/
+
+$primary: #009EE2;
+
+$text-color: #262626;

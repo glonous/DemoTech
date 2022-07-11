@@ -21,7 +21,7 @@ body.home {
 
     .uk-navbar {
       transition: all 0.5s ease-in-out;
-      background-color: rgba(255, 255, 255, 1);
+      background-color: rgba(240, 241, 247, 1);
     }
     
     .uk-logo {
@@ -44,13 +44,23 @@ body.home {
       }
     }
 
+    input[type=text] {
+      border-color: $text-color;
+      border-width: 1px;
+      border-style: solid;
+      border-radius: 20px;
+    }
+
+    a {
+      color: $text-color;
+    }
+
+    // Transparent changes
     &.uk-navbar-transparent {
       height: 0;
-
       .uk-navbar {
-        background-color: rgba(255, 255, 255, 0);
+        background-color: rgba(240, 241, 247, 0);
       }
-
       .uk-logo {
         img {
           opacity: 0;
@@ -59,6 +69,9 @@ body.home {
           opacity: 1;
         }
       }
+      a {
+        color: #fff;
+      }
     }
   }
 }
@@ -66,9 +79,43 @@ body.home {
 // Hero section
 
 #hero_section {
-  background: rgb(83,33,183);
-  background: -moz-linear-gradient(45deg,  rgba(83,33,183,1) 0%, rgba(2,97,214,1) 100%);
-  background: -webkit-linear-gradient(45deg,  rgba(83,33,183,1) 0%,rgba(2,97,214,1) 100%);
-  background: linear-gradient(45deg,  rgba(83,33,183,1) 0%,rgba(2,97,214,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5321b7', endColorstr='#0261d6',GradientType=1 );
+  // background: rgb(83,33,183);
+  // background: linear-gradient(45deg,  rgba(83,33,183,1) 0%,rgba(2,97,214,1) 100%);
+  position: relative;
+
+  .hero-colors-bg {
+    background: rgb(83,33,183);
+    background: linear-gradient(45deg,  rgba(83,33,183,1) 0%,rgba(2,97,214,1) 100%);
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .hero-bg {
+    background-position: center right;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  h1, h2, h3, h4, h5, h6, p {
+    color: #fff;
+  }
+
+  .hero-texts {
+    padding-top: 80px;
+
+    h1, h2 {
+      font-size: 46px;
+      margin-bottom: 0;
+      line-height: 0.95;
+      font-weight: 700;
+    }
+    h2 {
+      margin-bottom: 1.5rem;
+    }
+    p {
+      font-size: 20px;
+    }
+  }
 }

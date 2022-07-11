@@ -8,6 +8,10 @@ Author URI: https://github.com/joseacat/wordpycat
 Template: wordpycat-master
 */
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+@font-face {
+  font-family: "minecraft";
+  src: url("fonts/minecraft.ttf");
+}
 body {
   font-family: "DM Sans", sans-serif;
 }
@@ -16,6 +20,7 @@ body {
   font-family: "DM Sans", sans-serif;
 }
 
+/*-----colors-------*/
 nav .uk-navbar-left img {
   height: 45px;
 }
@@ -25,7 +30,7 @@ body.home .uk-navbar-container {
 }
 body.home .uk-navbar-container .uk-navbar {
   transition: all 0.5s ease-in-out;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(240, 241, 247);
 }
 body.home .uk-navbar-container .uk-logo a {
   position: relative;
@@ -44,11 +49,20 @@ body.home .uk-navbar-container .uk-logo .light-logo img {
   opacity: 0;
   filter: contrast(0) brightness(1000%) grayscale(1);
 }
+body.home .uk-navbar-container input[type=text] {
+  border-color: #262626;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 20px;
+}
+body.home .uk-navbar-container a {
+  color: #262626;
+}
 body.home .uk-navbar-container.uk-navbar-transparent {
   height: 0;
 }
 body.home .uk-navbar-container.uk-navbar-transparent .uk-navbar {
-  background-color: rgba(255, 255, 255, 0);
+  background-color: rgba(240, 241, 247, 0);
 }
 body.home .uk-navbar-container.uk-navbar-transparent .uk-logo img {
   opacity: 0;
@@ -56,9 +70,41 @@ body.home .uk-navbar-container.uk-navbar-transparent .uk-logo img {
 body.home .uk-navbar-container.uk-navbar-transparent .uk-logo .light-logo img {
   opacity: 1;
 }
+body.home .uk-navbar-container.uk-navbar-transparent a {
+  color: #fff;
+}
 
 #hero_section {
+  position: relative;
+}
+#hero_section .hero-colors-bg {
   background: rgb(83, 33, 183);
   background: linear-gradient(45deg, rgb(83, 33, 183) 0%, rgb(2, 97, 214) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#5321b7", endColorstr="#0261d6",GradientType=1 );
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#hero_section .hero-bg {
+  background-position: center right;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#hero_section h1, #hero_section h2, #hero_section h3, #hero_section h4, #hero_section h5, #hero_section h6, #hero_section p {
+  color: #fff;
+}
+#hero_section .hero-texts {
+  padding-top: 80px;
+}
+#hero_section .hero-texts h1, #hero_section .hero-texts h2 {
+  font-size: 46px;
+  margin-bottom: 0;
+  line-height: 0.95;
+  font-weight: 700;
+}
+#hero_section .hero-texts h2 {
+  margin-bottom: 1.5rem;
+}
+#hero_section .hero-texts p {
+  font-size: 20px;
 }/*# sourceMappingURL=style.css.map */
