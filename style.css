@@ -415,6 +415,11 @@ body.home .uk-navbar-container.uk-navbar-transparent #searchform input[type=subm
 #contact_section p, #contact_section label {
   color: #b7b7b7;
 }
+@media (max-width: 960px) {
+  #contact_section label {
+    font-size: 12px;
+  }
+}
 #contact_section textarea, #contact_section input {
   border: solid 1px #626262;
   color: #fff;

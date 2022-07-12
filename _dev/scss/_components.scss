@@ -358,6 +358,11 @@ body.home {
   p, label {
     color: #b7b7b7;
   }
+  label {
+    @include viewport(tablet) {
+      font-size: 12px;
+    }
+  }
 
   textarea, input {
     border: solid 1px #626262;
