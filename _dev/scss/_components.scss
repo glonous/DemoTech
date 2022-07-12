@@ -126,6 +126,7 @@ body.home {
 #hero_section {
   position: relative;
   min-height: 80vh;
+  overflow: hidden;
   @include viewport(tablet) {
     min-height: 90vh;
   }

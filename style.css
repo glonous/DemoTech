@@ -188,6 +188,7 @@ body.home .uk-navbar-container.uk-navbar-transparent #searchform input[type=subm
 #hero_section {
   position: relative;
   min-height: 80vh;
+  overflow: hidden;
 }
 @media (max-width: 960px) {
   #hero_section {
