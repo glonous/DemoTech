@@ -26,18 +26,21 @@ if ( 'posts' == get_option( 'show_on_front' ) ) {
 if(have_posts()){
 	the_post();
 
-    $home_sections = ['hero', 'about'];
+    $home_sections = ['hero', 'features', 'about', 'testimonial', 'logocloud', 'cta', 'contact'];
     foreach( $home_sections as $section ){
         if ( is_active_sidebar( $section ) ) {
             get_template_part( 'sections/' . esc_attr( $section ) );  
         }
     }
 
-   /*  if ( is_active_sidebar( 'hero' ) ) {
-        get_template_part( 'sections/hero' );
-    } */
+    ?> <div class="uk-container uk-container-small"> <?php
+	    the_content();
+    ?> </div> <?php
 
-	the_content();
+    if ( is_active_sidebar( 'microcontact' ) ) {
+        get_template_part( 'sections/microcontact' ); 
+    }
+
 }else{
 	echo __('No hay contenido en este post.', 'wordpycat');
 }

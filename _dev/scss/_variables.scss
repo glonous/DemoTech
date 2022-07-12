@@ -1,11 +1,45 @@
 
 // Imports
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
 
 @font-face {
-  font-family: "minecraft";
-  src: url("fonts/minecraft.ttf")
+  font-family: "Sailec";
+  src: url("fonts/sailec/bold.ttf")
 }
+
+/* Responsive media query mixins */
+@mixin viewport($point) {
+	@if $point == desktop {
+		@media ( min-width: 961px ) { @content; }
+	}
+	@else if $point == tablet {
+		@media ( max-width: 960px )  { @content; }
+	}
+	@else if $point == mobile {
+		@media ( max-width: 640px )  { @content; }
+	}
+	@else if $point == largedesktop {
+		@media ( min-width: 1600px )  { @content; }
+  }
+  @else if $point == xlargedesktop {
+		@media ( min-width: 2400px )  { @content; }
+	}
+}
+
+/*-----viewport samples for copy/paste-----------*/
+/*
+@include viewport(mobile) {
+}
+@include viewport(tablet) {
+}
+@include viewport(desktop) {
+}
+@include viewport(largedesktop) {
+}
+@include viewport(xlargedesktop) {
+}
+*/
+
 
 // Body and base
 body {
@@ -21,3 +55,9 @@ body {
 $primary: #009EE2;
 
 $text-color: #262626;
+
+$bg-gray: #36363a;
+
+$box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+
+$primary-gradient: linear-gradient(45deg,  rgba(83,33,183,1) 0%,rgba(2,97,214,1) 100%);

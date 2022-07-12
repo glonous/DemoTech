@@ -1,8 +1,8 @@
 /*
 Theme Name: Wordpystart
-Theme URI: http://nothing.com
+Theme URI: https://github.com/glonous/DemoTech
 Version: 0.1
-Description: Child theme for biciesto demo
+Description: Child theme for bisiesto demo
 Author: Jose Manuel del Solar
 Author URI: https://github.com/joseacat/wordpycat
 Template: wordpycat-master
@@ -11,5 +11,6 @@ Template: wordpycat-master
 
 // Base definitions for the theme
 @import 'variables';
+@import 'elements';
 
 @import 'components';

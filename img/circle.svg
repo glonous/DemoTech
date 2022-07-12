@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.2.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 256 256" style="enable-background:new 0 0 256 256;" xml:space="preserve">
+<style type="text/css">
+	.Estilo_x0020_gráfico{fill:url(#SVGID_1_);}
+	.st0{fill:url(#SVGID_2_);}
+</style>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1" y2="0">
+	<stop  offset="0" style="stop-color:#0058E5"/>
+	<stop  offset="1" style="stop-color:#009FE5"/>
+</linearGradient>
+<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="0" y1="128" x2="256" y2="128">
+	<stop  offset="0" style="stop-color:#0058E5"/>
+	<stop  offset="1" style="stop-color:#009FE5"/>
+</linearGradient>
+<path class="st0" d="M128,1c33.9,0,65.8,13.2,89.8,37.2S255,94.1,255,128s-13.2,65.8-37.2,89.8S161.9,255,128,255
+	s-65.8-13.2-89.8-37.2S1,161.9,1,128s13.2-65.8,37.2-89.8S94.1,1,128,1 M128,0C57.3,0,0,57.3,0,128s57.3,128,128,128
+	s128-57.3,128-128S198.7,0,128,0L128,0z"/>
+</svg>

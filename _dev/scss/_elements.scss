@@ -1,0 +1,60 @@
+// titles
+h2 {
+  text-align: center;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  display: table;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+
+  &:after {
+    content: '';
+    width: 0;
+    height: 1px;
+    display: block;
+    transition: all ease-in-out 1s;
+    background: $primary-gradient;
+    margin: auto;
+  }
+  &.title-triggered {
+    &:after {
+      width: 80%;
+    }
+  }
+}
+
+.relative {
+  position: relative;
+}
+
+
+// wordpress buttons
+.wp-block-button__link {
+  text-transform: uppercase;
+  color: $primary;
+  padding: 0.4rem 1.6rem;
+  border-radius: 0.6rem;
+  transition: all ease-in-out .2s;
+  font-weight: 500;
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+input, textarea {
+  outline: none;
+}
+
+// backgrounds
+.gradient-bg {
+  background: rgb(255,255,255);
+  background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(247,247,247,1) 100%);
+}
+
+.png-shadow {
+  filter: drop-shadow(2px 4px 14px #22222246);
+}

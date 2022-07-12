@@ -27,12 +27,18 @@
 								</a>
 							</div>
 						</div>
+
+						<div class="uk-navbar-center nav-overlay uk-visible@m">
+							<!-- Base menu -->
+							<?php wp_nav_menu( array( 'theme_location' => 'menu-principal',  'menu_class' => 'nav-menu uk-navbar-nav', 'container' => 'ul' ) ); ?>
+						</div>
+
 						<div class="uk-navbar-right nav-overlay">
 							<div class="uk-navbar-item menu-menu-1-container menu uk-visible@m">
-								<!-- Base menu -->
-								<?php wp_nav_menu( array( 'theme_location' => 'menu-principal',  'menu_class' => 'nav-menu uk-navbar-nav', 'container' => 'ul' ) ); ?>
+								<!-- log menu -->
 								<?php get_search_form(); ?>
 							</div>
+							<a class="uk-navbar-toggle uk-hidden@m" data-uk-toggle data-uk-navbar-toggle-icon href="#offcanvas-nav"></a>
 						</div>
 				</div>
 
