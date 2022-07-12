@@ -466,6 +466,7 @@ body.home .uk-navbar-container.uk-navbar-transparent #searchform input[type=subm
   position: fixed;
   bottom: 20px;
   right: 20px;
+  z-index: 999;
 }
 .floating-contact .floating-button {
   background: linear-gradient(45deg, rgb(83, 33, 183) 0%, rgb(2, 97, 214) 100%);
