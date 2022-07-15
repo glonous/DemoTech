@@ -239,6 +239,46 @@ body.home {
   }
 }
 
+//rolling text
+$letterdelay: 0.015s;
+.rolling-button{
+  line-height: 1.8em;
+  height: 1.5em;
+  overflow: hidden;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: 600;
+  &:hover {
+    .letter{
+      transform: translateY(-100%);
+    }
+  }
+  .block:last-child{
+    color: #000;
+  }
+  .letter{
+    display: inline-block;
+    transition: transform 0.45s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+}
+
+.uk-light .rolling-button.btn-linear {
+  &:hover {
+    border: solid $primary 1px;
+    color: #fff;
+    background-color: #0000004d;
+  }
+  .block:last-child{
+    color: lighten($color: $primary, $amount: 20%);
+  }
+}
+
+@for $i from 0 through 25 {
+  .letter:nth-child(#{$i + 1}) {
+    transition-delay: $letterdelay * $i;
+  }
+}
+
 
 // Testimonial
 #testimonial_section {
@@ -369,7 +409,7 @@ body.home {
   textarea, input {
     border: solid 1px #626262;
     color: #fff;
-    border-radius: 0.6rem;
+    border-radius: $border-radius;
     width: 100%;
     font-size: 0.8rem;
   }
@@ -432,7 +472,7 @@ body.home {
   }
   .uk-card {
     padding: 20px;
-    border-radius: 8px;
+    border-radius: $border-radius;
 
     form label {
       font-size: 12px;
@@ -537,6 +577,42 @@ body.home {
       width: 100%;
       margin: auto;
     }
+  }
+}
+
+// CTA
+#cta_section {
+  .uk-background-cover {
+    position: relative;
+    &:before {
+      content: '';
+      background-color: #0000004d;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: block;
+    }
+  }
+  .uk-container {
+    z-index: 2;
+    text-align: center;
+  }
+  h2 {
+    font-family: "Sailec";
+    font-weight: 700;
+    line-height: 0.95;
+    font-size: 2.8rem;
+    text-transform: none;
+    letter-spacing: 0;
+    margin-bottom: 0.5rem;
+    text-shadow: $text-shadow;
+  }
+  h3 {
+    margin-top: 0;
+    font-weight: 600;
+    text-shadow: $text-shadow;
   }
 }
 

@@ -45,8 +45,43 @@ if(have_posts()){
 	echo __('No hay contenido en este post.', 'wordpycat');
 }
 
-
 ?>
+
+<section id="container-recomended">
+    <div>
+        <h2><?php echo __('Posts recientes', 'wordpyacat'); ?></h2>
+
+        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+
+            <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@m uk-grid">
+
+                <?php
+                    $recent_posts_query = new WP_Query( 'posts_per_page=4' );
+                    while ($recent_posts_query -> have_posts()) : $recent_posts_query -> the_post();
+                ?>
+                    <li>
+                        <a class="uk-panel" href="<?php the_permalink() ?>">
+                            <div class="thumb">
+                                <?php	if ( has_post_thumbnail()) {
+                                    the_post_thumbnail('medium');
+                                } else {
+                                    ?> <div class="nothumb"></div><?php
+                                }?>
+                            </div>
+
+                            <div class="uk-position-center uk-panel"><h4><?php the_title(); ?></h4></div>
+                            
+
+                        </a>
+                    </li>
+                <?php
+                    endwhile;
+                    wp_reset_postdata();
+                ?>
+            </ul>
+        </div>
+    </div>
+</section>
 
 <?php
 get_footer();

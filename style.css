@@ -62,6 +62,47 @@ h2.title-triggered:after {
   position: relative;
 }
 
+.btn, .btn:visited {
+  background: linear-gradient(45deg, rgb(83, 33, 183) 0%, rgb(2, 97, 214) 100%);
+  margin: auto;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  width: auto;
+  box-sizing: content-box;
+  border-radius: 0.6rem;
+  transition: all 0.3 ease-in-out;
+}
+.btn:hover, .btn:visited:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+.btn-linear, .btn-linear:visited {
+  color: #000;
+  border: solid 1px #000;
+  margin: auto;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  width: auto;
+  box-sizing: content-box;
+  border-radius: 0.6rem;
+  transition: all 0.3 ease-in-out;
+}
+.btn-linear:hover, .btn-linear:visited:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+.uk-light .btn-linear, .uk-light .btn-linear:visited {
+  border: solid 1px #fff;
+  color: #fff;
+  transition: all 0.3 ease-in-out;
+}
+.uk-light .btn-linear:hover, .uk-light .btn-linear:visited:hover {
+  color: #000;
+  border: solid 1px #000;
+}
+
 .wp-block-button__link {
   text-transform: uppercase;
   color: #009EE2;
@@ -83,6 +124,11 @@ input, textarea {
 .gradient-bg {
   background: rgb(255, 255, 255);
   background: linear-gradient(to bottom, rgb(255, 255, 255) 0%, rgb(247, 247, 247) 100%);
+}
+
+.gradient-bg-primary-dark {
+  background: rgb(62, 58, 183);
+  background: linear-gradient(135deg, rgb(62, 58, 183) 0%, rgb(37, 116, 219) 100%);
 }
 
 .png-shadow {
@@ -297,6 +343,138 @@ body.home .uk-navbar-container.uk-navbar-transparent #searchform input[type=subm
   opacity: 0.2;
 }
 
+.rolling-button {
+  line-height: 1.8em;
+  height: 1.5em;
+  overflow: hidden;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: 600;
+}
+.rolling-button:hover .letter {
+  transform: translateY(-100%);
+}
+.rolling-button .block:last-child {
+  color: #000;
+}
+.rolling-button .letter {
+  display: inline-block;
+  transition: transform 0.45s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.uk-light .rolling-button.btn-linear:hover {
+  border: solid #009EE2 1px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.3019607843);
+}
+.uk-light .rolling-button.btn-linear .block:last-child {
+  color: #49c8ff;
+}
+
+.letter:nth-child(1) {
+  transition-delay: 0s;
+}
+
+.letter:nth-child(2) {
+  transition-delay: 0.015s;
+}
+
+.letter:nth-child(3) {
+  transition-delay: 0.03s;
+}
+
+.letter:nth-child(4) {
+  transition-delay: 0.045s;
+}
+
+.letter:nth-child(5) {
+  transition-delay: 0.06s;
+}
+
+.letter:nth-child(6) {
+  transition-delay: 0.075s;
+}
+
+.letter:nth-child(7) {
+  transition-delay: 0.09s;
+}
+
+.letter:nth-child(8) {
+  transition-delay: 0.105s;
+}
+
+.letter:nth-child(9) {
+  transition-delay: 0.12s;
+}
+
+.letter:nth-child(10) {
+  transition-delay: 0.135s;
+}
+
+.letter:nth-child(11) {
+  transition-delay: 0.15s;
+}
+
+.letter:nth-child(12) {
+  transition-delay: 0.165s;
+}
+
+.letter:nth-child(13) {
+  transition-delay: 0.18s;
+}
+
+.letter:nth-child(14) {
+  transition-delay: 0.195s;
+}
+
+.letter:nth-child(15) {
+  transition-delay: 0.21s;
+}
+
+.letter:nth-child(16) {
+  transition-delay: 0.225s;
+}
+
+.letter:nth-child(17) {
+  transition-delay: 0.24s;
+}
+
+.letter:nth-child(18) {
+  transition-delay: 0.255s;
+}
+
+.letter:nth-child(19) {
+  transition-delay: 0.27s;
+}
+
+.letter:nth-child(20) {
+  transition-delay: 0.285s;
+}
+
+.letter:nth-child(21) {
+  transition-delay: 0.3s;
+}
+
+.letter:nth-child(22) {
+  transition-delay: 0.315s;
+}
+
+.letter:nth-child(23) {
+  transition-delay: 0.33s;
+}
+
+.letter:nth-child(24) {
+  transition-delay: 0.345s;
+}
+
+.letter:nth-child(25) {
+  transition-delay: 0.36s;
+}
+
+.letter:nth-child(26) {
+  transition-delay: 0.375s;
+}
+
 #testimonial_section img {
   max-width: 420px;
   width: 100%;
@@ -484,7 +662,7 @@ body.home .uk-navbar-container.uk-navbar-transparent #searchform input[type=subm
 }
 .floating-contact .uk-card {
   padding: 20px;
-  border-radius: 8px;
+  border-radius: 0.6rem;
 }
 .floating-contact .uk-card form label {
   font-size: 12px;
@@ -578,6 +756,39 @@ body.home .uk-navbar-container.uk-navbar-transparent #searchform input[type=subm
   max-width: 160px;
   width: 100%;
   margin: auto;
+}
+
+#cta_section .uk-background-cover {
+  position: relative;
+}
+#cta_section .uk-background-cover:before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.3019607843);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+}
+#cta_section .uk-container {
+  z-index: 2;
+  text-align: center;
+}
+#cta_section h2 {
+  font-family: "Sailec";
+  font-weight: 700;
+  line-height: 0.95;
+  font-size: 2.8rem;
+  text-transform: none;
+  letter-spacing: 0;
+  margin-bottom: 0.5rem;
+  text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.41);
+}
+#cta_section h3 {
+  margin-top: 0;
+  font-weight: 600;
+  text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.41);
 }
 
 footer {

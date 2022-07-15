@@ -29,6 +29,48 @@ h2 {
   position: relative;
 }
 
+// buttons
+.btn, .btn:visited {
+  background: $primary-gradient;
+  margin: auto;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  width: auto;
+  box-sizing: content-box;
+  border-radius: $border-radius;
+  transition: all 0.3 ease-in-out;
+  &:hover {
+    color: #000;
+    text-decoration: none;
+  } 
+}
+
+.btn-linear, .btn-linear:visited {
+  color: #000;
+  border: solid 1px #000;
+  margin: auto;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  width: auto;
+  box-sizing: content-box;
+  border-radius: $border-radius;
+  transition: all 0.3 ease-in-out;
+  &:hover {
+    color: #000;
+    text-decoration: none;
+  } 
+}
+
+.uk-light .btn-linear, .uk-light .btn-linear:visited {
+  border: solid 1px #fff;
+  color: #fff;
+  transition: all 0.3 ease-in-out;
+  &:hover {
+    color: #000;
+    border: solid 1px #000;
+  } 
+}
+
 
 // wordpress buttons
 .wp-block-button__link {
@@ -53,6 +95,11 @@ input, textarea {
 .gradient-bg {
   background: rgb(255,255,255);
   background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(247,247,247,1) 100%);
+}
+
+.gradient-bg-primary-dark {
+  background: rgb(62,58,183);
+  background: linear-gradient(135deg,  rgba(62,58,183,1) 0%,rgba(37,116,219,1) 100%);
 }
 
 .png-shadow {
