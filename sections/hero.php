@@ -30,5 +30,16 @@
 		</ul>
 	</div>
 
+	<div class="hero-notice uk-visible@m" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+		<div class="uk-container">
+			<div class="uk-child-width-expand@s">
+				<img src="http://delsol.design/me/wp-content/themes/atomic-blocks/images/svg-logo1.svg" />
+				<img src="https://bisiesto.es/wp-content/uploads/2021/07/logo-bisiesto-nuevo-interletreado@2x-98x18.png"/>
+			
+				<p>Demotech es una startup ficticia desarollado como prueba para Bisiesto, demostrando uso de wordpress</p>
+			</div>
+		</div>
+	</div>
+
 </section>
 <!-- .hero-section -->

@@ -342,6 +342,24 @@ body.home .uk-navbar-container.uk-navbar-transparent #searchform input[type=subm
   transition: all ease-in-out 10s;
   opacity: 0.2;
 }
+#hero_section .hero-notice {
+  padding-top: 2rem;
+}
+#hero_section .hero-notice .uk-container div {
+  max-width: 25rem;
+  text-align: center;
+}
+#hero_section .hero-notice img {
+  display: inline-block;
+  width: 80px;
+  opacity: 0.5;
+}
+#hero_section .hero-notice p {
+  color: #666;
+  margin-top: 0;
+  text-align: center;
+  font-size: 0.8rem;
+}
 
 .rolling-button {
   line-height: 1.8em;
