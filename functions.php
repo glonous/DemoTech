@@ -362,4 +362,10 @@ if ( function_exists( 'lazyblocks' ) ) :
 endif;
 
 
+
+function demotech_custom_excerpt_length( $length ) {
+	return 10;
+}
+add_filter( 'excerpt_length', 'demotech_custom_excerpt_length', 999 );
+
 ?>
